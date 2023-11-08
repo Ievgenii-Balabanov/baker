@@ -249,6 +249,20 @@ ul {
     font-weight: 600;
 }
 
+.chefs-list {
+    display: flex;
+    gap: 30px;
+}
+
+.chefs-item {
+    flex-basis: calc((100% - 30px) / 2);
+}
+
+.chef-card {
+    display: flex;
+    gap: 30px;
+}
+
 .chef-photo {
     border-radius: 4px 4px 4px 200px;
     box-shadow: -16px 16px 0 0 var(--color-primary-light),
@@ -286,6 +300,12 @@ ul {
     font-weight: 600;
 }
 
+.formats-container {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
 .format-text {
     font-size: 14px;
     font-weight: 300;
@@ -299,6 +319,7 @@ ul {
     width: 44px;
     height: 44px;
     padding: 0;
+    flex-shrink: 0;
     fill: var(--color-primary-dark);
     border-radius: 50%;
     background-color: transparent;
@@ -312,9 +333,23 @@ ul {
 }
 
 /* Contact section */
+.contacts-section {
+    padding-bottom: 96px;
+}
+
+.contacts-container {
+    display: flex;
+    gap: 32px;
+}
 
 .contacts-title {
     margin-bottom: 16px;
+}
+
+.contacts-map {
+    flex-shrink: 0;
+    border: 0;
+    border-radius: 16px;
 }
 
 /* Footer */
