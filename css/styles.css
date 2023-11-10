@@ -117,6 +117,7 @@ ul {
 .link {
     color: var(--color-primary-light);
     text-decoration: none;
+    transition: color .3s;
 }
 
 .link:hover {
@@ -126,8 +127,11 @@ ul {
 
 /* Header */
 .header {
-    background-color: grey;
-    /* remove*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 32px;
 }
 
 .header-container {
@@ -153,7 +157,11 @@ ul {
 /* Hero-section */
 .hero-section {
     padding: 272px 0;
-    background-image: url(../images/hero-section-background.jpg);
+    background-image: linear-gradient(103deg,
+            rgba(18, 18, 17, 0.78) 2.03%,
+            rgba(18, 18, 17, 0.60) 58.46%,
+            rgba(18, 18, 17, 0.00) 90.36%),
+        url(../images/hero-section-background.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -316,6 +324,10 @@ ul {
     border-radius: 16px;
 }
 
+.format-card:hover {
+    transform: scale(1.05);
+}
+
 .formats-title {
     margin-bottom: 80px;
 }
@@ -350,6 +362,10 @@ ul {
     background-color: transparent;
     border: 1px solid var(--color-primary-dark);
     cursor: pointer;
+}
+
+.carousel-button.next {
+    transform: rotate(180deg);
 }
 
 .carousel-button:hover {
@@ -465,24 +481,28 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
+    padding: 20px 0;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
+    transition: .3s, visibility 0.3s;
 }
 
 .backdrop.is-hidden {
-    display: none;
-    /* opacity: 0;
+    /* display: none; */
+    opacity: 0;
     visibility: hidden;
-    pointer-events: none; */
+    pointer-events: none;
     /* for animation */
 }
 
 .modal {
     position: relative;
-    width: 880px;
-    height: 880px;
+    width: 100%;
+    max-width: 880px;
+    height: 100%;
+    max-height: 880px;
     background-color: var(--color-primary-light);
     border-radius: 32px;
 }
