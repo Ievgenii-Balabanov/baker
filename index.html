@@ -25,7 +25,15 @@
                         <li><a class="link" href="#contacts-section">Контакти</a></li>
                     </ul>
                 </nav>
-                <button class="button modal-btn-open" type="button">Замовити дзвінок</button>
+                <button class="header__button button modal-btn-open" type="button">Замовити дзвінок</button>
+                <button class="header__burger menu-btn-open" type="button">
+                    <svg width="24" height="24">
+                        <use href="./images/icons.svg#icon-menu"></use>
+                    </svg>
+                </button>
+                <div class="mobile-menu">
+                    <button class="mobile-menu__btn-close menu-btn-close" type="button">Close</button>
+                </div>
             </div>
         </div>
     </header>
@@ -33,6 +41,7 @@
         <section class="hero-section">
             <div class="container">
                 <h1 class="hero-section__title"><span class="text-brand">Сучасна</span> пекарня</h1>
+                <button class="hero-section__button button modal-btn-open" type="button">Замовити дзвінок</button>
             </div>
         </section>
         <section class="advantages-section">
@@ -62,13 +71,16 @@
                             А ще у наших пекарень стильний дизайн та висока якість обслуговування!
                         </p>
                     </div>
-                    <img src="./images/baker-man.jpg" alt="Чоловік пекар дивиться на батотни із посмікою">
+                    <img class="traditions-section__image"
+                        srcset="./images/baker-man.jpg 1x, ./images/baker-man@2x.jpg 2x" src="./images/baker-man.jpg"
+                        alt="Чоловік пекар дивиться на батотни із посмікою">
                 </div>
             </div>
         </section>
-        <section class="chefs-section section" id="chefs-section">
+        <!-- <section class="chefs-section section" id="chefs-section">
             <div class="container">
-                <h2 class="chefs-section__title section__title section__title--centered">Наші найкращі <br> <span class="text-brand-dark">шеф-кухарі</span>
+                <h2 class="chefs-section__title section__title section__title--centered">Наші найкращі <br> <span
+                        class="text-brand-dark">шеф-кухарі</span>
                 </h2>
                 <ul class="chefs-section__list">
                     <li class="chefs-section__item">
@@ -77,7 +89,8 @@
                             <div>
                                 <h3 class="chef-card__title">Настя</h3>
                                 <p class="chef-card__text">Привіт, я Настя!</p>
-                                <p class="chef-card__text">Вже 10 років, я втілюю <br> у життя цікаві та смачні ідеї.</p>
+                                <p class="chef-card__text">Вже 10 років, я втілюю <br> у життя цікаві та смачні ідеї.
+                                </p>
                                 <p class="chef-card__text">Я випічу для вас <br> найсмачніщі вироби!</p>
                             </div>
                         </article>
@@ -88,7 +101,8 @@
                             <div>
                                 <h3 class="chef-card__title">Влад</h3>
                                 <p class="chef-card__text">Привіт, я Влад!</p>
-                                <p class="chef-card__text">Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша любов, з
+                                <p class="chef-card__text">Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша
+                                    любов, з
                                     <br>
                                     якою ми ділимось кожен
                                     раз з Вами
@@ -100,8 +114,8 @@
                     </li>
                 </ul>
             </div>
-        </section>
-        <section class="formats-section section" id="formats-section">
+        </section> -->
+        <!-- <section class="formats-section section" id="formats-section">
             <div class="container">
                 <h2 class="formats-section__title section__title section__title--centered">Формати</h2>
                 <div class="formats-section__container">
@@ -127,7 +141,8 @@
                         </li>
                         <li class="formats-section__item">
                             <article class="format-card">
-                                <img class="format-card__image" src="./images/horseshoe-format.jpg" alt="Horseshoe format">
+                                <img class="format-card__image" src="./images/horseshoe-format.jpg"
+                                    alt="Horseshoe format">
                                 <h3 class="format-card__title" lang="en">Horseshoe</h3>
                                 <div class="format-card__text">
                                     <p>Площа: до 25 м2</p>
@@ -139,7 +154,8 @@
                         </li>
                         <li class="formats-section__item">
                             <article class="format-card">
-                                <img class="format-card__image" src="./images/handlebar-format.jpg" alt="Handlebar format">
+                                <img class="format-card__image" src="./images/handlebar-format.jpg"
+                                    alt="Handlebar format">
                                 <h3 class="format-card__title" lang="en">Handlebar</h3>
                                 <div class="format-card__text">
                                     <p>Площа: до 15 м2</p>
@@ -157,8 +173,8 @@
                     </button>
                 </div>
             </div>
-        </section>
-        <section class="contacts-section section" id="contacts-section">
+        </section> -->
+        <!-- <section class="contacts-section section" id="contacts-section">
             <div class="container">
                 <div class="contacts-section__container">
                     <div class="contacts-section__form">
@@ -177,7 +193,8 @@
 
                             <div class="contacts-section__form-field input">
                                 <label class="input__label visually-hidden" for="user-email">Електронна пошта</label>
-                                <input class="input__control" type="email" id="user-email" placeholder="Електронна пошта">
+                                <input class="input__control" type="email" id="user-email"
+                                    placeholder="Електронна пошта">
                             </div>
 
                             <button class="contacts-section__button button" type="submit">Замовити дзвінок</button>
@@ -193,9 +210,9 @@
                     </iframe>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
             <div class="footer-container">
                 <nav class="footer-nav">
@@ -246,7 +263,7 @@
             </div>
 
         </div>
-    </footer>
+    </footer> -->
 
     <div class="backdrop is-hidden">
         <div class="modal">
@@ -278,7 +295,8 @@
         </div>
     </div>
 
-    <script src="./modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
